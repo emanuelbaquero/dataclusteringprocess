@@ -1,0 +1,65 @@
+{
+	"name": "Public_Parking_Lots_Cluster",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabaseEmanuelbaq",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Lot",
+				"type": "varchar"
+			},
+			{
+				"name": "Island",
+				"type": "varchar"
+			},
+			{
+				"name": "Stalls",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Latititude",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "Longitidue",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "Name",
+				"type": "varchar"
+			},
+			{
+				"name": "Second_Entrance_Cross_Street",
+				"type": "varchar"
+			},
+			{
+				"name": "Payment",
+				"type": "varchar"
+			},
+			{
+				"name": "Rates",
+				"type": "varchar"
+			},
+			{
+				"name": "GeoJSON",
+				"type": "varchar"
+			},
+			{
+				"name": "prediction",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Public_Parking_Lots_Cluster"
+		}
+	}
+}

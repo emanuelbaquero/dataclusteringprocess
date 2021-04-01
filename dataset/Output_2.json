@@ -1,0 +1,28 @@
+{
+	"name": "Output_2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorageEmanuelbaq",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "output_2.csv",
+				"container": "curated"
+			},
+			"columnDelimiter": "|",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Lot|Island|Stalls|Latititude|Longitidue",
+				"type": "String"
+			}
+		]
+	}
+}
