@@ -1,0 +1,23 @@
+{
+	"name": "PredictionData",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorageEmanuelbaq",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "curatedCluster.csv",
+				"container": "curated"
+			},
+			"columnDelimiter": "|",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}

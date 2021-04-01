@@ -1,0 +1,19 @@
+{
+	"name": "Prediction_Excel",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorageEmanuelbaq",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "curated"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": []
+	}
+}
