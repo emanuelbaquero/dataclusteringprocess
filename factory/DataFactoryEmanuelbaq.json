@@ -1,0 +1,9 @@
+{
+	"name": "DataFactoryEmanuelbaq",
+	"location": "westus2",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "7395a49f-74c5-4121-8b1c-3dfd240a7158",
+		"tenantId": "4ae96ea6-f975-4b56-8523-50c4430f40f2"
+	}
+}
